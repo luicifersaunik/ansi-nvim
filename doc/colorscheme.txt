@@ -1,0 +1,13 @@
+*ansi-nvim.txt* Neovim colorscheme based on base16-black-metal-bathory
+
+Author:  Steve Simkins (stevedylandev) <hello@stevedylan.dev>
+
+INTRODUCTION                                                    *ansi-nvim*
+===========================================================================
+
+Colorschemes can be accessed with |:colorscheme|.
+>
+    :colorscheme ansi
+<
+
+vim:tw=78:ts=8:ft=help:norl:
