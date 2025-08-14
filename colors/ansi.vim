@@ -1,5 +1,4 @@
 hi clear
-set notermguicolors
 let g:colors_name = 'ansi'
 lua require('ansi-colorscheme').setup({
     \ base00 = 0, base01 = 8, base02 = 8, base03 = 8,
