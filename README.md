@@ -2,7 +2,7 @@
 
 A colorscheme that adapts to your terminal colors through ANSI values
 
-[Video Demo](https://files.stevedylan.dev/ansi-nvim.mp4)
+![Gif Demo](assets/ansi-nvim.gif)
 
 
 > [!WARNING]
