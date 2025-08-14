@@ -99,10 +99,10 @@ function M.setup(colors, config)
     hi.Bold                               = { cterm = 'bold' }
     hi.Debug                              = { ctermfg = M.colors.cterm08 }
     hi.Directory                          = { ctermfg = M.colors.cterm0D }
-    hi.Error                              = { ctermfg = M.colors.cterm08, ctermbg = M.colors.cterm00 }
-    hi.ErrorMsg                           = { ctermfg = M.colors.cterm08, ctermbg = M.colors.cterm00 }
+    hi.Error                              = { ctermfg = M.colors.cterm08, ctermbg = nil }
+    hi.ErrorMsg                           = { ctermfg = M.colors.cterm08, ctermbg = nil }
     hi.Exception                          = { ctermfg = M.colors.cterm08, ctermbg = nil }
-    hi.FoldColumn                         = { ctermfg = M.colors.cterm0C, ctermbg = M.colors.cterm00 }
+    hi.FoldColumn                         = { ctermfg = M.colors.cterm0C, ctermbg = nil }
     hi.Folded                             = { ctermfg = M.colors.cterm03, ctermbg = M.colors.cterm01 }
     hi.IncSearch                          = { ctermfg = M.colors.cterm01, ctermbg = M.colors.cterm09, cterm = 'none' }
     hi.Italic                             = { ctermfg = nil, ctermbg = nil, cterm = 'italic' }
@@ -121,16 +121,16 @@ function M.setup(colors, config)
     hi.WarningMsg                         = { ctermfg = M.colors.cterm08, ctermbg = nil }
     hi.WildMenu                           = { ctermfg = M.colors.cterm08, ctermbg = M.colors.cterm0A }
     hi.Title                              = { ctermfg = M.colors.cterm0D, ctermbg = nil, cterm = 'none' }
-    hi.Conceal                            = { ctermfg = M.colors.cterm0D, ctermbg = M.colors.cterm00 }
+    hi.Conceal                            = { ctermfg = M.colors.cterm0D, ctermbg = nil }
     hi.Cursor                             = { ctermfg = M.colors.cterm00, ctermbg = M.colors.cterm05 }
     hi.NonText                            = { ctermfg = M.colors.cterm03, ctermbg = nil }
-    hi.LineNr                             = { ctermfg = M.colors.cterm04, ctermbg = M.colors.cterm00 }
-    hi.SignColumn                         = { ctermfg = M.colors.cterm04, ctermbg = M.colors.cterm00 }
+    hi.LineNr                             = { ctermfg = M.colors.cterm04, ctermbg = nil }
+    hi.SignColumn                         = { ctermfg = M.colors.cterm04, ctermbg = nil }
     hi.StatusLine                         = { ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm02, cterm = 'none' }
     hi.StatusLineNC                       = { ctermfg = M.colors.cterm04, ctermbg = M.colors.cterm01, cterm = 'none' }
     hi.WinBar                             = { ctermfg = M.colors.cterm05, ctermbg = nil, cterm = 'none' }
     hi.WinBarNC                           = { ctermfg = M.colors.cterm04, ctermbg = nil, cterm = 'none' }
-    hi.VertSplit                          = { ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm00, cterm = 'none' }
+    hi.VertSplit                          = { ctermfg = M.colors.cterm05, ctermbg = nil, cterm = 'none' }
     hi.ColorColumn                        = { ctermfg = nil, ctermbg = M.colors.cterm01, cterm = 'none' }
     hi.CursorColumn                       = { ctermfg = nil, ctermbg = M.colors.cterm01, cterm = 'none' }
     hi.CursorLine                         = { ctermfg = nil, ctermbg = M.colors.cterm01, cterm = 'none' }
@@ -172,15 +172,15 @@ function M.setup(colors, config)
     hi.Typedef                            = { ctermfg = M.colors.cterm0A, ctermbg = nil }
 
     -- Diff highlighting
-    hi.DiffAdd                            = { ctermfg = M.colors.cterm0B, ctermbg = M.colors.cterm00 }
-    hi.DiffChange                         = { ctermfg = M.colors.cterm03, ctermbg = M.colors.cterm00 }
-    hi.DiffDelete                         = { ctermfg = M.colors.cterm08, ctermbg = M.colors.cterm00 }
-    hi.DiffText                           = { ctermfg = M.colors.cterm0D, ctermbg = M.colors.cterm00 }
-    hi.DiffAdded                          = { ctermfg = M.colors.cterm0B, ctermbg = M.colors.cterm00 }
-    hi.DiffFile                           = { ctermfg = M.colors.cterm08, ctermbg = M.colors.cterm00 }
-    hi.DiffNewFile                        = { ctermfg = M.colors.cterm0B, ctermbg = M.colors.cterm00 }
-    hi.DiffLine                           = { ctermfg = M.colors.cterm0D, ctermbg = M.colors.cterm00 }
-    hi.DiffRemoved                        = { ctermfg = M.colors.cterm08, ctermbg = M.colors.cterm00 }
+    hi.DiffAdd                            = { ctermfg = M.colors.cterm0B, ctermbg = nil }
+    hi.DiffChange                         = { ctermfg = M.colors.cterm03, ctermbg = nil }
+    hi.DiffDelete                         = { ctermfg = M.colors.cterm08, ctermbg = nil }
+    hi.DiffText                           = { ctermfg = M.colors.cterm0D, ctermbg = nil }
+    hi.DiffAdded                          = { ctermfg = M.colors.cterm0B, ctermbg = nil }
+    hi.DiffFile                           = { ctermfg = M.colors.cterm08, ctermbg = nil }
+    hi.DiffNewFile                        = { ctermfg = M.colors.cterm0B, ctermbg = nil }
+    hi.DiffLine                           = { ctermfg = M.colors.cterm0D, ctermbg = nil }
+    hi.DiffRemoved                        = { ctermfg = M.colors.cterm08, ctermbg = nil }
 
     -- Git highlighting
     hi.gitcommitOverflow                  = { ctermfg = M.colors.cterm08, ctermbg = nil }
@@ -200,10 +200,10 @@ function M.setup(colors, config)
     hi.gitcommitSelectedFile              = { ctermfg = M.colors.cterm0B, ctermbg = nil, cterm = 'bold' }
 
     -- GitGutter highlighting
-    hi.GitGutterAdd                       = { ctermfg = M.colors.cterm0B, ctermbg = M.colors.cterm00 }
-    hi.GitGutterChange                    = { ctermfg = M.colors.cterm0D, ctermbg = M.colors.cterm00 }
-    hi.GitGutterDelete                    = { ctermfg = M.colors.cterm08, ctermbg = M.colors.cterm00 }
-    hi.GitGutterChangeDelete              = { ctermfg = M.colors.cterm0E, ctermbg = M.colors.cterm00 }
+    hi.GitGutterAdd                       = { ctermfg = M.colors.cterm0B, ctermbg = nil }
+    hi.GitGutterChange                    = { ctermfg = M.colors.cterm0D, ctermbg = nil }
+    hi.GitGutterDelete                    = { ctermfg = M.colors.cterm08, ctermbg = nil }
+    hi.GitGutterChangeDelete              = { ctermfg = M.colors.cterm0E, ctermbg = nil }
 
     -- Spelling highlighting
     hi.SpellBad                           = { ctermfg = nil, ctermbg = nil, cterm = 'undercurl' }
@@ -415,9 +415,9 @@ function M.setup(colors, config)
 
     hi.NvimInternalError = { ctermfg = M.colors.cterm00, ctermbg = M.colors.cterm08, cterm = 'none' }
 
-    hi.NormalFloat       = { ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm00 }
-    hi.FloatBorder       = { ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm00 }
-    hi.NormalNC          = { ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm00 }
+    hi.NormalFloat       = { ctermfg = M.colors.cterm05, ctermbg = nil }
+    hi.FloatBorder       = { ctermfg = M.colors.cterm05, ctermbg = nil }
+    hi.NormalNC          = { ctermfg = M.colors.cterm05, ctermbg = nil }
     hi.TermCursor        = { ctermfg = M.colors.cterm00, ctermbg = M.colors.cterm05, cterm = 'none' }
     hi.TermCursorNC      = { ctermfg = M.colors.cterm00, ctermbg = M.colors.cterm05 }
 
@@ -434,14 +434,14 @@ function M.setup(colors, config)
     hi.TreesitterContext = { ctermfg = nil, ctermbg = M.colors.cterm01, cterm = 'italic' }
 
     if M.config.telescope then
-        hi.TelescopeBorder       = { ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm00 }
-        hi.TelescopePromptBorder = { ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm00 }
-        hi.TelescopePromptNormal = { ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm00 }
-        hi.TelescopePromptPrefix = { ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm00 }
-        hi.TelescopeNormal       = { ctermbg = M.colors.cterm00 }
+        hi.TelescopeBorder       = { ctermfg = M.colors.cterm05, ctermbg = nil }
+        hi.TelescopePromptBorder = { ctermfg = M.colors.cterm05, ctermbg = nil }
+        hi.TelescopePromptNormal = { ctermfg = M.colors.cterm05, ctermbg = nil }
+        hi.TelescopePromptPrefix = { ctermfg = M.colors.cterm05, ctermbg = nil }
+        hi.TelescopeNormal       = { ctermbg = nil }
         hi.TelescopePreviewTitle = { ctermfg = M.colors.cterm01, ctermbg = M.colors.cterm0B }
         hi.TelescopePromptTitle  = { ctermfg = M.colors.cterm01, ctermbg = M.colors.cterm08 }
-        hi.TelescopeResultsTitle = { ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm00 }
+        hi.TelescopeResultsTitle = { ctermfg = M.colors.cterm05, ctermbg = nil }
         hi.TelescopeSelection    = { ctermbg = M.colors.cterm01 }
         hi.TelescopePreviewLine  = { ctermbg = M.colors.cterm01, cterm = 'none' }
     end
@@ -478,8 +478,8 @@ function M.setup(colors, config)
     end
 
     if M.config.cmp then
-        hi.CmpDocumentationBorder   = { ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm00 }
-        hi.CmpDocumentation         = { ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm00 }
+        hi.CmpDocumentationBorder   = { ctermfg = M.colors.cterm05, ctermbg = nil }
+        hi.CmpDocumentation         = { ctermfg = M.colors.cterm05, ctermbg = nil }
         hi.CmpItemAbbr              = { ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm01 }
         hi.CmpItemAbbrDeprecated    = { ctermfg = M.colors.cterm03, ctermbg = nil, cterm = 'strikethrough' }
         hi.CmpItemAbbrMatch         = { ctermfg = M.colors.cterm0D, ctermbg = nil }
