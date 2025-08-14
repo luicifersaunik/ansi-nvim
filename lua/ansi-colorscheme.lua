@@ -95,7 +95,7 @@ function M.setup(colors, config)
     local hi                              = M.highlight
 
     -- Vim editor colors
-    hi.Normal                             = { ctermfg = M.colors.cterm05, ctermbg = M.colors.cterm00 }
+    hi.Normal                             = { ctermfg = M.colors.cterm05, ctermbg =  nil }
     hi.Bold                               = { cterm = 'bold' }
     hi.Debug                              = { ctermfg = M.colors.cterm08 }
     hi.Directory                          = { ctermfg = M.colors.cterm0D }
