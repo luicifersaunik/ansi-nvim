@@ -1,8 +1,9 @@
 # ansi-nvim
 
-![cover](https://files.stevedylan.dev/ansi-nvim.png)
+A colorscheme that adapts to your terminal colors through ANSI values
 
-A colorscheme adapted from base16-black-metal-bathory
+> [!WARNING]
+> This extension is still under development; if you experience problems please open an issue!
 
 ## Features
 
@@ -21,17 +22,6 @@ A colorscheme adapted from base16-black-metal-bathory
 
 ## Installation
 
-### Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
-
-```lua
-use {
-  'stevedylandev/ansi-nvim',
-  config = function()
-    vim.cmd('colorscheme ansi')
-  end
-}
-```
-
 ### Using [lazy.nvim](https://github.com/folke/lazy.nvim)
 
 ```lua
@@ -41,7 +31,20 @@ use {
   priority = 1000,
   config = function()
     vim.cmd('colorscheme ansi')
+    vim.opt.termguicolors = false
   end,
+}
+```
+
+### Using [packer.nvim](https://github.com/wbthomason/packer.nvim)
+
+```lua
+use {
+  'stevedylandev/ansi-nvim',
+  config = function()
+    vim.cmd('colorscheme ansi')
+    vim.opt.termguicolors = false
+  end
 }
 ```
 
@@ -53,10 +56,10 @@ Simply set the colorscheme in your Neovim configuration:
 vim.cmd('colorscheme ansi')
 ```
 
-If you don't see colors, make sure you have true color support enabled:
+If you don't see colors, make sure you have true color tured **off**. This is often turned on for colorschemes
 
 ```lua
-vim.opt.termguicolors = true
+vim.opt.termguicolors = false
 ```
 
 ## Configuration
@@ -81,4 +84,4 @@ require('ansi').setup({
 
 ## Credits
 
-This colorscheme is based on the base16-black-metal-bathory palette and was inspired by various dark themes in the Neovim ecosystem, and the base for this plugin is pulled from [base16-nvim](https://github.com/RRethy/base16-nvim)
+The base for this plugin is pulled from [base16-nvim](https://github.com/RRethy/base16-nvim)
