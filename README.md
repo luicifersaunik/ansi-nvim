@@ -2,6 +2,10 @@
 
 A colorscheme that adapts to your terminal colors through ANSI values
 
+[Video Demo](https://files.stevedylan.dev/ansi-nvim.mp4)
+![Video Demo](https://files.stevedylan.dev/ansi-nvim.mp4)
+
+
 > [!WARNING]
 > This extension is still under development; if you experience problems please open an issue!
 
